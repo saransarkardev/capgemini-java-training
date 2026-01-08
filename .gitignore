@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Java
+bin/
+*.class
+
+# Eclipse
+.metadata/
+s
