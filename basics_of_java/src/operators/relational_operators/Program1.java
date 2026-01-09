@@ -14,6 +14,8 @@ public class Program1 {
 		res = "A" == "B";
 		System.out.println(res);
 		
+
+		
 		res = "A" != "B";
 		System.out.println(res);
 		

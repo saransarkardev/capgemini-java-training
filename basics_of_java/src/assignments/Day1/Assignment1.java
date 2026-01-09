@@ -1,4 +1,4 @@
-package assignments;
+package assignments.Day1;
 
 
 // Capgemini Training Day 1 --> Assignment 1
