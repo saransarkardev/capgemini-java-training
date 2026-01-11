@@ -6,7 +6,7 @@ public class Program1 {
 		// No argument method
 		demo(); //method signature
 		
-		// Parametrized Method
+		// Parameterized Method
 		test(10); // --> actual argument
 		
 		//Formal Argument --> declaring variable. (accepting parameter in function)
