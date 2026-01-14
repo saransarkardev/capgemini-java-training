@@ -1,8 +1,9 @@
 package oops.fundamental.static_initializer;
 
 public class Program2 {
-//	Before main method .....initializers are executed first.
-//	All the static initializers will execute first line by line before executing the main method.
+	// Before main method .....initializers are executed first.
+	// All the static initializers will execute first line by line before executing the main method.
+	// static initializers runs once when class is loaded.
 	
 	static int i = 20; // Single line initializer
 	
