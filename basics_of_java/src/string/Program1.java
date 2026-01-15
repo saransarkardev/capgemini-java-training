@@ -17,7 +17,7 @@ public class Program1 {
 		s = "Hi";
 		
 		
-		// Here Hello object is already present in String constant pool , therefore, now no more "Hello" will be created in string static pool area ....and it will return the previous object reference which it already had and s1 will store the object refernce.
+		// Here Hello object is already present in String constant pool , therefore, now no more "Hello" will be created in string constant pool area ....and it will return the previous object reference which it already had and s1 will store the object refernce.
 		String s1 = "Hello";
 	}
 }
