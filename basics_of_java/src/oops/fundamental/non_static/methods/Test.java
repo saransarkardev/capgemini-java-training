@@ -15,6 +15,7 @@ public class Test {
 
 		person1.display();
 		
+		//No argument constructor --> Person()
 		Person person2 = new Person();
 		person2.name = "Anishka";
 		person2.age = 69;

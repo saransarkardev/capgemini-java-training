@@ -2,7 +2,7 @@ package oops.fundamental.non_static.methods;
 
 public class Test1 {
 	public static void main(String[] args) {
-		Student s1 = new Student;
+		Student s1 = new Student();
 		s1.id = 4;
 		s1.name = "Anishka";
 		s1.percentage = 98.25;
