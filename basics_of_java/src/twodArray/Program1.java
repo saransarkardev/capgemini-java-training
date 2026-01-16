@@ -1,7 +1,9 @@
 package twodArray;
 
 public class Program1 {
+
 	public static void main(String[] args) {
+		
 		int[][] a = {{100,4},{200,3}};
 		
 		// Here a[0] will return us the object reference of first array {100,4}
@@ -19,3 +21,14 @@ public class Program1 {
 		}
 	}
 }
+
+System.out.println("static block 1");
+System.out.println("static block 2");
+System.out.println("non-static block 1");
+System.out.println("demo()");
+System.out.println("non-static block 2");
+System.out.println("Program1()");
+System.out.println("non-static block 1");
+System.out.println("demo()");
+System.out.println("non-static block 2");
+System.out.println("Program1(int a)");
