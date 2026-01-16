@@ -20,7 +20,7 @@ public class Program2 {
 		
 		System.out.println(student);
 		
-		Employee[] emp = {new Employee(), new Employee()};
+//		Employee[] emp = {new Employee(), new Employee()};
 		System.out.println();
 	}
 }
