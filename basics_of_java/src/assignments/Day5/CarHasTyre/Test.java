@@ -13,13 +13,24 @@ public class Test {
 		System.out.println("Car Model: " + car.getModel());
 		System.out.println("Car Price: " + car.getPrice());
 		
-		Tyre tyre = car.getTyre();
-		tyre.setBrand("MRF");
-		tyre.setPrice(10000);
+		Tyre[] tyre = car.getTyre();
+		tyre[0].setBrand("MRF");
+		tyre[0].setPrice(10000);
 		
-		System.out.println("Tyre Company: " + tyre.getBrand());
-		System.out.println("Tyre Price: " + tyre.getPrice());
+		tyre[1].setBrand("CEAT");
+		tyre[1].setPrice(8000);
 		
+		tyre[2].setBrand("JK TYRE");
+		tyre[2].setPrice(9000);
+		
+		System.out.println("Tyre Company: " + tyre[0].getBrand());
+		System.out.println("Tyre Price: " + tyre[0].getPrice());
+		
+		System.out.println("Tyre Company: " + tyre[1].getBrand());
+		System.out.println("Tyre Price: " + tyre[1].getPrice());
+		
+		System.out.println("Tyre Company: " + tyre[2].getBrand());
+		System.out.println("Tyre Price: " + tyre[2].getPrice());
 		
 	}
 }

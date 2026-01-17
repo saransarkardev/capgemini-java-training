@@ -6,10 +6,13 @@ public class Car{
     private String model;
     private int price;
 
-    private Tyre tyre;
+    private Tyre[] tyre = new Tyre[4];
 
     Car() {
-        tyre = new Tyre();
+    	tyre[0] = new Tyre();
+        tyre[1] = new Tyre();
+        tyre[2] = new Tyre();
+        tyre[3] = new Tyre();
     }
 
     // Getters --> read the value
@@ -39,7 +42,7 @@ public class Car{
         this.price = price;
     }
 
-    public Tyre getTyre() {
+    public Tyre[] getTyre() {
         return tyre;
     }
 
