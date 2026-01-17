@@ -2,18 +2,19 @@ package inheritance;
 
 public class Nephrologist extends Doctor{
 
-	//
 	public void dylasis() {
 		System.out.println("dylasis");
 	}
 	
 	public static void main(String[] args) {
-		Nephrologist object=new Nephrologist();
-		System.out.println(object.degree);
-		System.out.println(object.name);
-		object.checkBp();
-		object.checkTemp();
-		object.dylasis();
+		
+		Nephrologist obj = new Nephrologist();
+
+		System.out.println(obj.degree);
+		System.out.println(obj.name);
+		obj.checkBp();
+		obj.checkTemp();
+		obj.dylasis();
 		
 	}
 }

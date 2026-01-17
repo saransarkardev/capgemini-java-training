@@ -18,3 +18,4 @@ public class Sub extends Super{
 }	
 
 //super class will always load first then the sub class.
+// private members(variable, methods) can not be inherited.
