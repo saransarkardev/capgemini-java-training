@@ -3,7 +3,7 @@ package netflix_app;
 public class Test {
 	public static void main(String[] args) {
 
-        // Movies
+		  // Movies
         Movie m1 = new Movie("War", "Hindi", "165", "Action");
         Movie m2 = new Movie("Krish", "Hindi", "134", "Thriller");
 
