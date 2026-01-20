@@ -15,7 +15,7 @@ public class Developer extends Employee{
 	}
 	
 	public static void main(String[] args) {
-		Developer diddy = new Developer("Anishka", 18, 69, 200000, "Python..hssss");
-		diddy.displayDeveloper();
+		Developer d = new Developer("Anishka", 18, 69, 200000, "Python");
+		d.displayDeveloper();
 	}
 }
