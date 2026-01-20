@@ -9,6 +9,13 @@ public class Dog extends Animal{
 	}
 	
 	public void displayDog() {
+		displayAnimal();
+		System.out.println("Age: "+ age);
+	}
+	
+	public static void main(String[] args) {
 		
+		Dog d = new Dog("black", "Rocky", 12);
+		d.displayDog();
 	}
 }

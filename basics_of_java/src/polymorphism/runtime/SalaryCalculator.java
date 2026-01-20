@@ -17,7 +17,7 @@ public class SalaryCalculator {
 			
 			System.out.println("Enter the employee id: ");
 			int id = sc.nextInt();
-			sc.nextInt();
+			sc.nextLine();
 			
 			System.out.println("Enter the employee name: ");
 			String name = sc.nextLine();
@@ -39,7 +39,7 @@ public class SalaryCalculator {
 				employees[i] = pe;
 				
 				break;
-;			}
+			}
 			case 2:
 				System.out.println("Enter the hours:");
 				int hours = sc.nextInt();

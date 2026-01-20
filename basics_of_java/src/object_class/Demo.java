@@ -1,4 +1,4 @@
-package oject_demo;
+package object_class;
 
 public class Demo {
 	

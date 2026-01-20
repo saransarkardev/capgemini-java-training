@@ -7,6 +7,10 @@ public class Sub extends Super{
 	
 	static int j = 20;
 	
+	static {
+		System.out.println("Sub class Static block");
+	}
+	
 	public static void test() {
 		System.out.println("test()");
 	}

@@ -6,13 +6,16 @@ public class DummyB extends DummyA{
 	public static void b1(){
 		System.out.println("Static b1()");
 	}
+	
 	static{
 		System.out.println("DummyB static init");
 	}
+	
 	String b2 = "b2 variable";
 	public void b2(){
 		System.out.println("Non-static b2()");
 	}
+	
 	{
 		System.out.println("DummyB Non-static init");
 	}

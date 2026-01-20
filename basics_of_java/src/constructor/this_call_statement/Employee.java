@@ -1,6 +1,7 @@
 package constructor.this_call_statement;
 
 public class Employee {
+	
 	int id;
 	String name;
 	double salary;

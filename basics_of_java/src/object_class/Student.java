@@ -1,4 +1,4 @@
-package oject_demo;
+package object_class;
 
 public class Student {
 	// There are total 11 non static methods in Object class.

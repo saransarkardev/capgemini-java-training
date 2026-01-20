@@ -11,7 +11,8 @@ public class B3 extends B2{
 		
 		System.out.println(a);
 		System.out.println(super.a);
-		System.out.println(((B1)this).a);
+		
+		System.out.println(((B1)this).a); // Here it is doing up casting 
 	}
 	
 	public void displayPrint() {
