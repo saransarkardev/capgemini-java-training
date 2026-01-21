@@ -10,11 +10,8 @@ public class CheckedExceptionDemo {
 			Class.forName("");
 		}
 		catch(ClassNotFoundException c) {
-			System.out.println("Exception handled.");
+			System.out.println("Exception handled");
 		}
-		
-
-		
 		System.out.println("Program ended");
 	}
 }

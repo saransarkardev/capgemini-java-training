@@ -5,7 +5,7 @@ public class Exception1 {
 		System.out.println("Program Started");
 		
 		try {
-			int a = 10/0;
+			int b = 10/0;
 		}
 		catch(ArithmeticException e) {
 			System.out.println("can not divide by zero.");
