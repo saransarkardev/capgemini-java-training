@@ -1,7 +1,8 @@
 package object_class;
 
 public class Student {
-	// There are total 11 non static methods in Object class.
+	// There are total 11 non static methods in Object class. --> equals(), hashCode(), toString(), clone() etc..
+	
 	int id;
 	String name;
 	double perc;
@@ -16,7 +17,7 @@ public class Student {
 	@Override 
 	public boolean equals(Object obj) {
 		
-		Student s = (Student) obj;
+		Student s = (Student) obj; // downcasting
 		
 		if (this.id == s.id) {
 			return true;

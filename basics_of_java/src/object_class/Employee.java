@@ -1,6 +1,7 @@
 package object_class;
 
 public class Employee {
+	
 	int id;
 	String name;
 	int salary;
