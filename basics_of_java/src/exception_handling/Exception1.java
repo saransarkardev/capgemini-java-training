@@ -2,6 +2,8 @@ package exception_handling;
 
 public class Exception1 {
 	public static void main(String[] args) {
+		// Runtime Exception --> Unchecked exception (Compiler will allow to compile the code)
+		
 		System.out.println("Program Started");
 		
 		try {

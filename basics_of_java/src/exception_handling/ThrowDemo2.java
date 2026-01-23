@@ -2,7 +2,7 @@ package exception_handling;
 
 public class ThrowDemo2 {
 
-	// Checked Exception --> compile time exception
+	// Checked Exception --> compile time exception (Compiler will not allow to compile the code if we don't handle the exception using try-catch block or Exception declaration on the method.
 	public static void vote (int age) throws ClassNotFoundException{
 		
 		if (age >= 18) {
@@ -14,7 +14,7 @@ public class ThrowDemo2 {
 		}
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException{
 		
 		System.out.println("Candidate went for voting.");
 //		try {

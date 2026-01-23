@@ -2,7 +2,7 @@ package exception_handling;
 
 public class ExceptionPropogation {
 	
-	public static int getNameLength(String s) {
+	public static int getNameLength(String s){
 //		try {
 			return s.length();
 //		}

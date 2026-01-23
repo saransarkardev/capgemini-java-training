@@ -24,7 +24,8 @@ public class MultipleCatch {
         catch(ArrayIndexOutOfBoundsException e){
             System.out.println(e.getMessage());
         }
-
+        
+        // one try block, multiple catch block. The most parent class exception should be at the last on the catch block.
         try{
             
             System.out.println(100/0);

@@ -4,6 +4,7 @@ public class ThrowDemo {
 
 	
 	// Unchecked Exception --> runtime exception
+	
 	public static void vote(int age) {
 		
 		if (age >= 18) {
