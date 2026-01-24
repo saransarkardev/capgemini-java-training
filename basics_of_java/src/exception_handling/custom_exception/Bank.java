@@ -7,6 +7,7 @@ public class Bank {
 	public static void debit(double amount) throws InvalidAmountException {
 		
 		if (amount > balance) {
+			//compile time exception
 			throw new InvalidAmountException("Amount is greater than balance.")
 		}
 		else {

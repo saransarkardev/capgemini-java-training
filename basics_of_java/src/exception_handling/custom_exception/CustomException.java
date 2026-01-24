@@ -8,7 +8,7 @@ public class CustomException {
                 System.out.println("Passed");
         }
         else{
-            throw new InvalidPercentageException("Teri Gand Mari Teri Gand Mari");
+            throw new InvalidPercentageException("You have entered Invalid percentage");
         }
     }
 
