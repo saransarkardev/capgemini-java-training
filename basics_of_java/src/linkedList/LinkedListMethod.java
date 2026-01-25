@@ -8,6 +8,7 @@ public class LinkedListMethod {
 
         LinkedList<String> list = new LinkedList<>();
 
+        System.out.println("--------------------------------");
         // add()
         System.out.println(list);
         list.add("A");
@@ -60,6 +61,7 @@ public class LinkedListMethod {
         System.out.println(list);
         list.offerLast("NewLast");
         System.out.println("After offerLast(): " + list);
+        System.out.println("--------------------------------");
         System.out.println("--------------------------------");
     }
 }
