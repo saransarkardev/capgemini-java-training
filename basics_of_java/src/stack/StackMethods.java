@@ -26,9 +26,9 @@ public class StackMethods {
 		
 		System.out.println("after peek"+ stack);
  
-		System.out.println("empty()"+ stack.empty());
+		System.out.println("empty()"+ stack.isEmpty());
  
-		System.out.println("search: "+ stack.search(300));
+		System.out.println("search: "+ stack.search(200));
 	}
 
 }
