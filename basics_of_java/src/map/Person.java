@@ -1,5 +1,30 @@
 package map;
 
-public class Person {
-
+public class Person implements Comparable<Person>{
+	int id;
+	String name;
+	int age;
+	
+	public Person(int id, String name, int age) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+	
+	@Override
+	public String toString() {
+		return "Person: [id = "+id + "Name: = "+ name+ " Age: "+ age;
+	}
+	
+	@Override
+	public int compareTo(Person p) {
+		
+		if (this.id > p.id) {
+			return -1;
+		}
+		else if (this.id == p.id) {
+			return 1;
+		}
+		return 0;
+	}
 }
