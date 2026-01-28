@@ -23,6 +23,6 @@ public class Employee implements Comparable<Employee>{
 		else if (this.salary > e.salary) {
 			return -1;
 		}
-		return 0;
+		return this.name.compareTo(e.name);
 	}
 }
