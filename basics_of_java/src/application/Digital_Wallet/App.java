@@ -20,7 +20,17 @@ class InvalidPaymentException extends RuntimeException{
 
 interface WalletService {
 	
+	/**
+	 * Adds money to the wallet.
+	 * @throws WalletLimitExceededException if wallet limit is exceeded
+	 * @throws InvalidPaymentException if amount is invalid
+	 */
 	abstract void addMoney(double amount) throws WalletLimitExceededException;
+	
+	/**
+	 * Pays money from the wallet.
+	 * @throws InvalidPaymentException if amount is invalid or balance is insufficient
+	 */
 	abstract void payMoney(double amount);
 }
 
@@ -28,13 +38,15 @@ abstract class Wallet implements WalletService{
 	
 	private int walletID;
 	private String userName;
-	private String walletType;
+	protected String walletType;
 	private double balance;
 	
 	public Wallet(int walletID, String userName) {
 		this.walletID = walletID;
 		this.userName = userName;
+		this.balance = 0.0;
 	}
+	
 	
 	public double getBalance() {
 		return this.balance;
@@ -47,6 +59,18 @@ abstract class Wallet implements WalletService{
 		this.balance = balance;
 	}
 	
+	 protected void validateAndDeduct(double amount) {
+	        if (amount <= 0) {
+	            throw new InvalidPaymentException("Amount must be positive");
+	        }
+
+	        if (amount > balance) {
+	            throw new InvalidPaymentException("Low balance");
+	        }
+
+	        setBalance(balance - amount);
+	    }
+	
 	public String toString() {
 		return "[Wallet ID: "+ walletID+ ", UserName: "+ userName + ", WalletType: "+  walletType+", Balance:  "+ balance+ "]";
 	}
@@ -55,8 +79,6 @@ abstract class Wallet implements WalletService{
 }
 
 class Basic extends Wallet{
-	
-	protected String walletType;
 	
 	
 	public Basic(int walletID, String userName) {
@@ -67,14 +89,13 @@ class Basic extends Wallet{
 	// ADD MONEY
 	@Override
 	public void addMoney(double amount) throws WalletLimitExceededException{
-		if (amount < 0) {
+		if (amount <= 0) {
 			throw new InvalidPaymentException("Amount should be greater than zero.");
 		}
 		
 		
-		double totalAmount = super.getBalance();
-		
-		totalAmount += amount;
+		double totalAmount = getBalance() + amount;
+
 		
 		if (totalAmount > 10000) {
 			throw new WalletLimitExceededException("Basic Payment limit exceeded.");
@@ -86,17 +107,7 @@ class Basic extends Wallet{
 	// PAY MONEY
 	@Override
 	public void payMoney(double amount) {
-		double balance = super.getBalance();
-		
-		if (amount <=0) {
-			throw new InvalidPaymentException("Amount must be positive");
-		}
-		
-		if (amount > balance) {
-			throw new InvalidPaymentException("Low balance");
-		}
-		
-		super.setBalance(balance-amount);
+		validateAndDeduct(amount);
 	}
 }
 
@@ -127,18 +138,10 @@ class Premium extends Wallet{
 	// PAY MONEY
 	@Override
 	public void payMoney(double amount) {
-		double balance = super.getBalance();
-		
-		if (amount <=0) {
-			throw new InvalidPaymentException("Amount must be positive");
-		}
-		
-		if (amount > balance) {
-			throw new InvalidPaymentException("Low balance");
-		}
-		
+		validateAndDeduct(amount);
+
 		double cashback = amount * 0.05;
 		
-		super.setBalance(balance-amount+cashback);
+		setBalance(getBalance()+cashback);
 	}
 }
