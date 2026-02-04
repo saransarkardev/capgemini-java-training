@@ -2,7 +2,7 @@ package dp;
 
 public class ZeroOneKnapsack {
 	    public static int knapsack(int[] weight, int[] value, int W, int n) {
-
+    
 	        // dp[i][w] = max value using first i items with capacity w
 	        int[][] dp = new int[n + 1][W + 1];
 
