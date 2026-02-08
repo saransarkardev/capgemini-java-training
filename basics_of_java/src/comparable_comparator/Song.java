@@ -1,4 +1,4 @@
-package comparable;
+package comparable_comparator;
 
 
 // Comparable interface is present inside java.lang package and Comparable is used to define the natural ordering 
@@ -108,7 +108,9 @@ public class Song implements Comparable<Song>{
 		System.out.println("BEFORE SORTING....");
 		MyUtils.iterateList(musicList);
 		
-		Collections.sort(musicList);
+//		Collections.sort(musicList);
+//		Collections.sort(musicList, new SortByYearComparator());
+		Collections.sort(musicList, new SortByArtistNameComparator());
 		
 		
 		System.out.println("AFTER SORTING....");

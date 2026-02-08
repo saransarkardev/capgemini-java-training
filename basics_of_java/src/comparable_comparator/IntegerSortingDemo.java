@@ -1,4 +1,4 @@
-package comparable;
+package comparable_comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
