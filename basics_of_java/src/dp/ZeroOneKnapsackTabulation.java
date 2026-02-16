@@ -1,6 +1,6 @@
 package dp;
 
-public class ZeroOneKnapsack {
+public class ZeroOneKnapsackTabulation {
 	    public static int knapsack(int[] weight, int[] value, int W, int n) {
     
 	        // dp[i][w] = max value using first i items with capacity w
